@@ -34,7 +34,7 @@
   font-size: 20px;
   color: var(--white-color);
 }
-.fa-window-maximize {
+.dash-logo {
   line-height: 38px;
   margin-right: 10px;
   font-size: 40px;
@@ -58,8 +58,8 @@
   color: var(--white-color);
 }
 
-.sidebar-menu .menu .menu-items h3 {
-  font-size: 20px;
+.menu-head h3 {
+  font-size: 16px;
   padding: 5px 0px !important;
   cursor: pointer;
   transition: 0.3s;
@@ -76,6 +76,7 @@ a {
 .nested-list{
   list-style: none;
   font-size: 14px;
+  font-weight: 600;
   color: #86878a !important;
 }
 .nested-list li{

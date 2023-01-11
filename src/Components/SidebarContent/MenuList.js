@@ -2,10 +2,11 @@ import React, { useState } from "react";
 
 const MenuList = ({ data }) => {
   const [openDropDown, setDropDown] = useState(true);
-  console.log(data);
+
+  
   return (
     <>
-      <div className="menu-items">
+      <div className="menu-items mb-4">
         <div
           className="menu-head d-flex justify-content-between dropdown dropdown-6"
           onClick={() => setDropDown(!openDropDown)}
@@ -16,9 +17,9 @@ const MenuList = ({ data }) => {
           </h3>
 
           {openDropDown ? (
-            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
           ) : (
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
           )}
         </div>
         <ul

@@ -2,7 +2,6 @@ import React from "react";
 import {
   BarChart,
   Bar,
-  Cell,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -71,9 +70,9 @@ const MainChart = () => {
      <div className="row mt-3">
           <div className="col-12">
             <div className="main-chart-container mx-auto">
-              <h5 className="ms-2">
+              <h6 className="ms-2">
                 LWOS {"("} LEAVES WITHOUT SERVICES {")"}
-              </h5>
+              </h6>
               <div className="chart-nav">
                 <div class="btn-group me-2">
                   <button

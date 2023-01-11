@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import myContext from "../context/context";
 // import DisplayFrom from "./DisplayFrom";
 import MainChart from "./Charts/MainChart";
@@ -24,13 +24,13 @@ const Dashboard = () => {
               <h3>04:48</h3>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-md-3 col-sm-6 col-12">
             <div className="top_box top_box_3 m-2 mx-auto">
               <span>AVG. SERVICE TIME</span>
               <h3>06:20</h3>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-md-3 col-sm-6 col-12">
             <div className="top_box top_box_4 m-2 mx-auto">
               <span>LWOS</span>
               <h3>19</h3>
@@ -46,5 +46,7 @@ const Dashboard = () => {
     </div>
   );
 };
+
+
 
 export default Dashboard;

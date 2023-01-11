@@ -13,7 +13,7 @@ const ChartPie = () => {
     <>
       <div className="col-6 mx-auto">
         <div className="main-chart-container mx-auto">
-          <h5 className="ms-2">AVG. LWOS AND BALKING FOR Q LENGTH</h5>
+          <h6 className="ms-2">AVG. LWOS AND BALKING FOR Q LENGTH</h6>
           <div className="chart-nav">
             <div class="btn-group me-2">
               <button
