@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-// import { NavLink } from 'react-router-dom';
 import myContext from "../context/context";
 import MenuList from "./SidebarContent/MenuList";
+
 
 const Sidebar = () => {
   const { close, closeSidebar } = useContext(myContext);
@@ -16,21 +16,38 @@ const Sidebar = () => {
         "Weekly Trends",
       ],
       faClass: "fa fa-th-large",
+      path: [
+        '/dashboard/primary',
+       '/dashboard/avgLWOSforqueue',
+       '/dashboard/LWOSforqueue',
+       '/dashboard/weeklytrends'
+      ]
     },
     {
       title: "Reports",
       options: ["Weekly", "Demographic Report", "Daily Report"],
       faClass: "fa fa-line-chart",
+      path: [
+        '/reports/weekly',
+       '/reports/demographicreport',
+       '/reports/dailyreport',
+      ]
+
     },
     {
       title: "Schedule",
       options: ["Email Scheduler", "SMS Alerts"],
       faClass: "fa fa-calendar",
+      path: [
+        '/schedule/emailscheduler',
+       '/schedule/smsalerts',
+      ]
     },
     {
       title: "Maintainance",
       options: ["Advance Settings"],
       faClass: "fa fa-cogs",
+      path: ['/maintainance/advancesettings']
     },
   ]; 
 

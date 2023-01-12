@@ -11,7 +11,7 @@ const COLORS = ["#45A321", "#CD4D4D", "#1976D2"];
 const ChartPie = () => {
   return (
     <>
-      <div className="col-6 mx-auto">
+      <div className="col-lg-6 mx-auto mt-lg-0 mt-4">
         <div className="main-chart-container mx-auto">
           <h6 className="ms-2">AVG. LWOS AND BALKING FOR Q LENGTH</h6>
           <div className="chart-nav">

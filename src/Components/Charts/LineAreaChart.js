@@ -100,20 +100,20 @@ const data = [
 function LineAreaChart() {
   return (
     <>
-        <div className="col-6 mx-auto">
+        <div className="col-lg-6 mx-auto mt-lg-0 mt-2">
           <div className="main-chart-container mx-auto">
-            <h6 className="ms-2">WEEKLY TRENDS</h6>
+            <h6 className="ms-2 mb-4">WEEKLY TRENDS</h6>
 
             <div style={{ width: "100%", height: "80%" }}>
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart
                   width={500}
-                  height={200}
+                  height={300}
                   data={data}
                   syncId="anyId"
                   margin={{
                     top: 10,
-                    right: 30,
+                    right: 20,
                     left: 0,
                     bottom: 0,
                   }}

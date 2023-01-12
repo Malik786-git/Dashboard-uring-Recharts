@@ -158,8 +158,8 @@ const MainChart = () => {
         data={data}
         margin={{
           top: 20,
-          right: 30,
-          left: 30,
+          right: 10,
+          left: 0,
           bottom: 5,
         }}
         >
@@ -175,10 +175,10 @@ const MainChart = () => {
             </div>
           </div>
         </div>
-     
       </div>
     </>
   );
 };
+
 
 export default MainChart;

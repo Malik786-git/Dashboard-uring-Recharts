@@ -6,6 +6,26 @@
 .dashboar_logo {
   letter-spacing: 4px;
 }
+.topbarItems{
+  position: relative;
+  height: 50px;
+}
+.URLpath{
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+.URLpathPadding{
+  margin-left: 150px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+.user_img{
+  position: absolute;
+  right: 90px;
+  top: 5px;
+}
 .sidebar {
   z-index: 100 !important;
   padding: 20px !important;
@@ -18,7 +38,6 @@
 
 .sidebar-hide {
   background-color: var(--primary-color);
-
   z-index: 100 !important;
   padding: 20px !important;
   position: fixed;
@@ -43,10 +62,10 @@
 .close span {
   position: absolute;
   font-size: 30px;
-  right: 10px;
+  right: 0px;
   top: 17px;
   padding: 0px 25px;
-  color: var(--white-color);
+  color: #1A65B4;
   display: none;
   cursor: pointer;
 }
@@ -59,7 +78,7 @@
 }
 
 .menu-head h3 {
-  font-size: 16px;
+  font-size: 18px;
   padding: 5px 0px !important;
   cursor: pointer;
   transition: 0.3s;
@@ -68,21 +87,39 @@ a {
   text-decoration: none !important;
 }
 .active {
-  color: rgb(255, 255, 255);
+  color: rgb(194, 23, 23);
   text-decoration: none;
+  display: block;
+  width: 100%;
+  /* background-color: #d21919 !important; */
 }
+/* .MenuOption_style{
+  color: #86878a !important;
+} */
+
 /* ----------------------- */
 
 .nested-list{
   list-style: none;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
-  color: #86878a !important;
+}
+.without_active{
+  color: #86878a;
+}
+.without_active:hover{
+  color: #1A65B4;
+}
+.active {
+  color: #1A65B4;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  /* background-color: #d21919 !important; */
 }
 .nested-list li{
   padding: 5px 0px;
-
-  /* margin: 10px 0px; */
+  width: 100%;
 }
 .menu-head{
   cursor: pointer;
@@ -131,6 +168,8 @@ a {
 }
 .navbar-brand {
   padding: 0 !important;
+  position: absolute;
+  left: 90px;
 }
 
 .navbar > .container-fluid {
@@ -139,6 +178,7 @@ a {
 .fa-bars {
   cursor: pointer;
   color: var(--white-color);
+  font-size: 30px;
 }
 /* Dashboard */
 .Dashboard {
@@ -216,7 +256,7 @@ a {
 /* Dashboar Page  */
 
 .top_box {
-  width: 250px;
+  /* width: 250px; */
   height: 110px;
   padding: 10px 20px;
   background-color: rgb(158, 100, 24);

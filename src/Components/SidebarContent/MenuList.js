@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const MenuList = ({ data }) => {
   const [openDropDown, setDropDown] = useState(true);
 
-  
+
+
   return (
     <>
       <div className="menu-items mb-4">
@@ -29,13 +31,17 @@ const MenuList = ({ data }) => {
               : "drop-down nested-list"
           }
         >
-          {data.options.map((data, index) => (
-            <li key={index}>{data}</li>
+          {data.options.map((items, index) => (
+            <NavLink activeclassname="active" key={index} className='without_active' to={data.path[index]}>
+              <li>{items}</li>
+            </NavLink>
           ))}
         </ul>
       </div>
     </>
   );
 };
+
+
 
 export default MenuList;
