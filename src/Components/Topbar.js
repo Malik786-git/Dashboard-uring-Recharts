@@ -24,7 +24,8 @@ const Topbar = () => {
             {close ? <i className="fa fa-bars" aria-hidden="true"></i> : ""}
           </span>
            <span className={close? `URLpathPadding`: `URLpath`}>
-             {menu} {">"} {option}
+             {menu.charAt(0).toLocaleUpperCase() + menu.slice(1)} {">"} 
+             {option.charAt(0).toLocaleUpperCase() + option.slice(1)}
             </span> 
           <figure className="user_img">
             <img src="/img/user1.png" width={45}/>
