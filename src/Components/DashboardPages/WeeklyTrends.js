@@ -17,4 +17,5 @@ const WeeklyTrends = () => {
   )
 }
 
+
 export default WeeklyTrends

@@ -9,6 +9,8 @@ const Topbar = () => {
   let path = location.pathname.split("/");
   path.shift();
   const [menu, option] = path;
+   let m = menu.charAt(0).toLocaleUpperCase() + menu.slice(1);
+   let o = option.charAt(0).toLocaleUpperCase() + option.slice(1);
 
   return (
     <>
@@ -23,14 +25,13 @@ const Topbar = () => {
           <span className="navbar-brand" onClick={openSidebar} >
             {close ? <i className="fa fa-bars" aria-hidden="true"></i> : ""}
           </span>
-           <span className={close? `URLpathPadding`: `URLpath`}>
-             {menu.charAt(0).toLocaleUpperCase() + menu.slice(1)} {">"} 
-             {option.charAt(0).toLocaleUpperCase() + option.slice(1)}
+           <span className={close? `URLpathPadding topPath`: `URLpath topPath`}>
+             {m} {">"}
+             {o}
             </span> 
           <figure className="user_img">
             <img src="/img/user1.png" width={45}/>
           </figure>
-         
         </div>
       </nav>
     </>
