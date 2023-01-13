@@ -43,5 +43,4 @@ const MenuList = ({ data }) => {
 };
 
 
-
 export default MenuList;

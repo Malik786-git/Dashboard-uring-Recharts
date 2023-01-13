@@ -8,7 +8,7 @@ const Advancesettings = () => {
 
   return (
     <div className={close ? "DashboardFull" : "Dashboard"}>
-     <h1 className='text-light'>Advance settings</h1>
+     <h1 className='text-light container'>Advance settings</h1>
     </div>
   )
 }

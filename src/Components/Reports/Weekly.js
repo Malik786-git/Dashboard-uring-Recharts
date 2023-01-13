@@ -8,7 +8,7 @@ const Weekly = () => {
     const { close } = useContext(myContext);
   return (
     <div className={close ? "DashboardFull" : "Dashboard"}>
-    <h1 className='text-light'> Weekly</h1>
+    <h1 className='text-light container'> Weekly</h1>
     </div>
   )
 }

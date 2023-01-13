@@ -7,7 +7,7 @@ const EmailScheduler = () => {
 
   return (
     <div className={close ? "DashboardFull" : "Dashboard"}>
-      <h1 className="text-light">EmailScheduler</h1>
+      <h1 className="text-light container">EmailScheduler</h1>
     </div>
   );
 };

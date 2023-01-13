@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useContext } from "react";
 import myContext from "../../context/context";
 const SmsAlerts = () => {
@@ -7,7 +6,7 @@ const SmsAlerts = () => {
 
   return (
     <div className={close ? "DashboardFull" : "Dashboard"}>
-      <h1 className="text-light">
+      <h1 className="text-light container">
          SmsAlerts SmsAlerts
         </h1>
     </div>

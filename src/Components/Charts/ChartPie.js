@@ -33,12 +33,12 @@ const ChartPie = () => {
           </div>
           <div
             style={{ width: "100%", height: "80%" }}
-            className="d-flex align-items-center justify-content-center"
+            className="d-flex position-relative align-items-center justify-content-center"
           >
             <PieChart width={300} height={300}>
               <Pie
-                data={dataPie}
-                cx={100}
+                data={dataPie}      
+                cx={150}
                 cy={150}
                 innerRadius={80}
                 outerRadius={100}

@@ -9,21 +9,21 @@ const Topbar = () => {
   let path = location.pathname.split("/");
   path.shift();
   const [menu, option] = path;
-   let m = menu.charAt(0).toLocaleUpperCase() + menu.slice(1);
-   let o = option.charAt(0).toLocaleUpperCase() + option.slice(1);
+  let m = menu.charAt(0).toLocaleUpperCase() + menu.slice(1);
+  let o = option.charAt(0).toLocaleUpperCase() + option.slice(1);
 
   return (
     <>
       <nav
         className={
           close
-            ? "TopbarFull navbar navbar-light"
-            : "Topbar navbar navbar-light"
+            ? "TopbarFull navbar"
+            : "Topbar navbar"
         }
       >
         <div className="container-fluid topbarItems">
           <span className="navbar-brand" onClick={openSidebar} >
-            {close ? <i className="fa fa-bars" aria-hidden="true"></i> : ""}
+            {close ? <i class="fa fa-align-left" aria-hidden="true"></i> : ""}
           </span>
            <span className={close? `URLpathPadding topPath`: `URLpath topPath`}>
              {m} {">"}
@@ -37,7 +37,6 @@ const Topbar = () => {
     </>
   );
 };
-
 
 
 export default Topbar;

@@ -10,7 +10,7 @@ const DemographicReport = () => {
     <div className={close ? "DashboardFull" : "Dashboard"}>
   
 
-<h1 className="text-light">
+<h1 className="text-light container">
 DemographicReport
       </h1>
     </div>

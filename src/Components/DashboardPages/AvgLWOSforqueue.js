@@ -10,7 +10,7 @@ const AvgLWOSforqueue = () => {
  
   return (
     <div className={close ? "DashboardFull" : "Dashboard"}>
-     <h1 className='text-light'>   AvgLWOSforqueue </h1>
+     <h1 className='text-light container'>   AvgLWOSforqueue </h1>
 
     </div>
   )

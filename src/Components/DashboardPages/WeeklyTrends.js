@@ -10,7 +10,7 @@ const WeeklyTrends = () => {
   
   return (
     <div className={close ? "DashboardFull" : "Dashboard"}>
-     <h1 className='text-light'>   WeeklyTrends </h1>
+     <h1 className='text-light container'>   WeeklyTrends </h1>
       
 
     </div>

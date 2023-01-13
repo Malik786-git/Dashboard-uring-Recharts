@@ -11,7 +11,7 @@ const Primary = () => {
 
   return (
     <div className={close ? "DashboardFull" : "Dashboard"}>
-      <h1 className='text-light'>
+      <h1 className='text-light container'>
         Primary
       </h1>
 

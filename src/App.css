@@ -40,9 +40,9 @@
 .sidebar {
   z-index: 100 !important;
   padding: 20px !important;
-  position: fixed;
+  position: fixed !important;
   width: 20%;
-  height: 100vh;
+  height: 100vh !important;
   background-color: var(--primary-color);
   transition: all 0.3s ease;
 }
@@ -51,9 +51,9 @@
   background-color: var(--primary-color);
   z-index: 100 !important;
   padding: 20px !important;
-  position: fixed;
+  position: fixed !important;
   width: 20%;
-  height: 100vh;
+  height: 100vh !important;
   transform: translateX(-100%);
   transition: all 0.3s ease;
 }
@@ -76,7 +76,7 @@
   right: 0px;
   top: 17px;
   padding: 0px 25px;
-  color: #1A65B4;
+  color: #ffffff;
   display: none;
   cursor: pointer;
 }
@@ -181,7 +181,7 @@ a {
 .navbar > .container-fluid {
   justify-content: flex-start !important;
 }
-.fa-bars {
+.fa-align-left {
   cursor: pointer;
   color: var(--white-color);
   font-size: 30px;
@@ -194,7 +194,6 @@ a {
   width: 80%;
   transition: all 0.3s ease;
   background-color: var(--primary-color);
-  min-height: 100vh;
 }
 
 .DashboardFull {
@@ -204,23 +203,13 @@ a {
   width: 100%;
   transition: all 0.3s ease;
   background-color: var(--primary-color);
-  min-height: 100vh;
 }
 
 .Dashboard-form {
   width: 80%;
   margin: 30px auto;
 }
-.review-box {
-  text-align: center;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--primary-color);
-  width: 400px;
-  border-radius: 15px;
-  box-shadow: 10px 10px 10px grey;
-  color: #14a1fff6;
-}
+
 .next-btns {
   display: flex;
   justify-content: space-evenly;
@@ -233,9 +222,7 @@ a {
 .next-btns > i:hover {
   color: #14a1fff6;
 }
-.review-box p {
-  color: var(--white-color);
-}
+
 .showmore {
   cursor: pointer;
   color: rgb(16, 151, 185);
@@ -250,15 +237,7 @@ a {
   font-weight: bold;
   cursor: pointer;
 }
-.question-box {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  margin: 10px auto;
-  width: 400px;
-  padding: 10px;
-  box-shadow: 10px 10px 10px grey;
-  border-radius: 10px;
-}
+
 /* //////////////////////////////////////////// */
 /* Dashboar Page  */
 
@@ -341,6 +320,7 @@ a {
 }
 .chart-field {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   font-size: 13px;
   color: #86878a !important;
@@ -391,10 +371,10 @@ a {
     font-size: 20px;
   }
   .Topbar {
-    width: 70%;
+    width: 100%;
   }
   .Dashboard {
-    width: 70%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -402,10 +382,10 @@ a {
     font-size: 62.5%;
   }
   .sidebar {
-    width: 32%;
+    width: 40%;
   }
   .sidebar-hide {
-    width: 32%;
+    width: 40%;
   }
   .fa-eercast {
     line-height: 30px;
@@ -414,11 +394,15 @@ a {
     display: none;
   }
   .Topbar {
-    width: 68%;
+    width: 100%;
   }
   .Dashboard {
-    width: 68%;
+    width: 100%;
   }
+  .top_box {
+    height: 80px;
+  }
+ 
 }
 @media screen and (max-width: 576px) {
   html {
@@ -429,6 +413,10 @@ a {
   }
   .sidebar-hide {
     width: 100%;
+  }
+  .dash-logo {
+    line-height: 25px;
+    font-size: 30px;
   }
   .Topbar {
     width: 100%;
@@ -451,5 +439,17 @@ a {
     padding: 0 !important;
     position: absolute;
     left: 20px;
+  }
+  .chart-field{
+    position: absolute;
+    bottom: -20px;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .chart-field span{
+     margin: 0 2px;
+  }
+   .top_box {
+    width: 80%;
   }
 }
