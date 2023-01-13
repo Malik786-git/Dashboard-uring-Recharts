@@ -4,6 +4,7 @@ import MainChart from "./Charts/MainChart";
 import LineAreaChart from "./Charts/LineAreaChart";
 import ChartPie from "./Charts/ChartPie";
 
+
 const Dashboard = () => {
   const { close } = useContext(myContext);
 
