@@ -10,8 +10,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-
-
 const data = [
   {
     name: '10:00',

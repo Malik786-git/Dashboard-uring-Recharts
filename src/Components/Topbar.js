@@ -11,6 +11,7 @@ const Topbar = () => {
   let m = path[0]?.charAt(0).toLocaleUpperCase() + path[0]?.slice(1);
   let o = path[1]?.charAt(0).toLocaleUpperCase() + path[1]?.slice(1);
 
+  
   return (
     <>
       <nav
@@ -36,6 +37,7 @@ const Topbar = () => {
     </>
   );
 };
+
 
 
 export default Topbar;

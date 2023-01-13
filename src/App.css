@@ -117,6 +117,7 @@ a {
 }
 .without_active{
   color: #86878a;
+  cursor: pointer;
 }
 .without_active:hover{
   color: #1A65B4;

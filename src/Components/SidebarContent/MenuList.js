@@ -1,10 +1,14 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { NavLink} from "react-router-dom";
+import myContext from "../../context/context";
 
 const MenuList = ({ data }) => {
   const [openDropDown, setDropDown] = useState(true);
-
-
+  const { closeSidebar } = useContext(myContext);
+  const NavigateFun = () => {
+    closeSidebar();
+    // navigate(path);
+  };
 
   return (
     <>
@@ -32,7 +36,13 @@ const MenuList = ({ data }) => {
           }
         >
           {data.options.map((items, index) => (
-            <NavLink activeclassname="active" key={index} className='without_active' to={data.path[index]}>
+            <NavLink
+              activeclassname="active"
+              key={index}
+              className="without_active"
+              onClick={NavigateFun}
+              to={data.path[index]}
+            >
               <li>{items}</li>
             </NavLink>
           ))}
@@ -41,6 +51,5 @@ const MenuList = ({ data }) => {
     </>
   );
 };
-
 
 export default MenuList;
